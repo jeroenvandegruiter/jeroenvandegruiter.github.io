@@ -76,7 +76,7 @@ header p {
 footer {
   margin-top: 50px;
   padding: 20px 0;
-  background: #fff;  /* white background */
+  background: transparent;
   color: #000;       /* black text */
   font-size: 14px;
   text-align: center;
