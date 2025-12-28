@@ -50,7 +50,7 @@ header p {
 
 .scroll-container::-webkit-scrollbar-thumb {
   background: #888;
-  border-radius: 4px;
+  border-radius: 0px;
 }
 
 /* Image Items */
