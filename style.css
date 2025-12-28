@@ -56,7 +56,7 @@ header p {
 /* Image Items */
 .image-item {
   flex: 0 0 auto;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .image-item img {
