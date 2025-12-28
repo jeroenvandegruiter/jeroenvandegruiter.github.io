@@ -45,7 +45,7 @@ header p {
 }
 
 .scroll-container::-webkit-scrollbar {
-  height: 8px;
+  height: 4px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
