@@ -62,14 +62,14 @@ header p {
 .image-item img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 .caption {
   margin-top: 5px;
   font-size: 14px;
   color: #555;
-  text-align: center; /* captions remain centered */
+  text-align: left;
 }
 
 /* Footer */
@@ -79,6 +79,6 @@ footer {
   background: transparent;
   color: #000;       /* black text */
   font-size: 14px;
-  text-align: center;
+  text-align: left;
   border-radius: 0;  /* optional: remove rounded corners if desired */
 }
