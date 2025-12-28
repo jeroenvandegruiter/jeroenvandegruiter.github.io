@@ -40,17 +40,31 @@ header p {
   display: flex;
   overflow-x: auto;
   gap: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 4px;
   scroll-behavior: smooth;
+
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
 }
 
+/* WebKit browsers (Chrome, Safari, Edge) */
 .scroll-container::-webkit-scrollbar {
   height: 4px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 0;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Optional: subtle hover feedback */
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* Image Items */
@@ -68,17 +82,4 @@ header p {
 .caption {
   margin-top: 5px;
   font-size: 14px;
-  color: #555;
-  text-align: left;
-}
-
-/* Footer */
-footer {
-  margin-top: 50px;
-  padding: 20px 0;
-  background: transparent;
-  color: #000;       /* black text */
-  font-size: 14px;
-  text-align: left;
-  border-radius: 0;  /* optional: remove rounded corners if desired */
-}
+  col
