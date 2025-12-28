@@ -39,7 +39,7 @@ header p {
 .scroll-container {
   display: flex;
   overflow-x: auto;
-  gap: 10px;
+  gap: 5px;
   padding-bottom: 10px;
   scroll-behavior: smooth;
 }
