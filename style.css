@@ -1,4 +1,10 @@
-/* Global Styles */
+/* =====================
+   Global Styles
+===================== */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -9,38 +15,41 @@ body {
   line-height: 1.6;
 }
 
-/* Header */
+/* =====================
+   Header
+===================== */
 header h1 {
   font-size: 16px;
-  font-weight: normal; /* regular, not bold */
-  text-align: left;
-  margin-bottom: 5px;
+  font-weight: normal;
+  margin: 0 0 5px 0;
 }
 
 header p {
   font-size: 16px;
   font-weight: normal;
-  text-align: left;
-  margin-top: 0;
+  margin: 0;
 }
 
-/* Portfolio Section */
+/* =====================
+   Portfolio Section
+===================== */
 .portfolio section {
   margin-bottom: 50px;
 }
 
 .portfolio h2 {
   font-size: 12px;
-  font-weight: normal; /* regular, not bold */
-  text-align: left;
-  margin-bottom: 10px;
+  font-weight: normal;
+  margin: 0 0 10px 0;
 }
 
-/* Horizontal Scroll */
+/* =====================
+   Horizontal Scroll
+===================== */
 .scroll-container {
   display: flex;
-  overflow-x: auto;
   gap: 5px;
+  overflow-x: auto;
   padding-bottom: 20px;
   scroll-behavior: smooth;
 
@@ -49,38 +58,46 @@ header p {
   scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
 }
 
-/* WebKit browsers (Chrome, Safari, Edge) */
+/* WebKit browsers */
 .scroll-container::-webkit-scrollbar {
   height: 4px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.25);
-  border-radius: 0;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .scroll-container::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* Optional: subtle hover feedback */
-.scroll-container::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.4);
-}
-
-/* Image Items */
+/* =====================
+   Images & Captions
+===================== */
 .image-item {
   flex: 0 0 auto;
   max-width: 300px;
 }
 
 .image-item img {
+  display: block;
   width: 100%;
   height: auto;
-  border-radius: 0px;
+  margin: 0;
 }
 
 .caption {
-  margin-top: 5px;
-  font-size: 14px;
-  col
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding-left: 0.5px; /* optical alignment */
+
+  font-size: 12px;
+  line-height: 1.4;
+  color: #555;
+}
+
