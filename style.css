@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
   padding: 20px;
   background: #f5f5f5;
@@ -30,7 +30,7 @@ header p {
 }
 
 .portfolio h2 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal; /* regular, not bold */
   text-align: left;
   margin-bottom: 10px;
